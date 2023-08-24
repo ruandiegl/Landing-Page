@@ -39,7 +39,34 @@ main {
 h2 {
     font-size: 56px;
     line-height: 10px;
+    font-family: 'poppinsmedium';
+}
+p {
+    width: 70%;
+}
+span {
+    color: rgb(132, 13, 201);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+}
+form > input {
+    height: 40px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 
+button.enviar {
+    height: 40px;
+    width: 25%;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(132, 13, 201) ;
+}
 
