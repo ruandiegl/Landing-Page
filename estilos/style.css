@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+
+body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+nav > .logo {
+    flex-direction: column;
+    line-height: 17px;
+}
+#logo > h1 {
+    font-weight: 200;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+}
+
+
+
