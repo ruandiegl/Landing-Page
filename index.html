@@ -11,13 +11,14 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <nav >
+        <nav>
             <div class="logo">
                 <h1>Marketing</h1>
                 <h1>Criativo</h1>
             </div>
-            <menu class="itens">
             <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <menu class="itens">
+            
             <ul>
                 <a href="#"><li>Inicio</li></a>
                 <a href="#"><li>Serviços</li></a>
@@ -26,7 +27,17 @@
                 <button>Ja tem uma conta?</button>
             </ul>
             </menu>
+            
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <a href="#"><li>Inicio</li></a>
+                <a href="#"><li>Serviços</li></a>
+                <a href="#"><li>Sobre</li></a>
+                <a href="#"><li>Contato</li></a>
+                <button>Ja tem uma conta?</button>
+            </ul>
+        </div>
     </header>
     <main>
         <aside>
@@ -39,34 +50,18 @@
 
                 <label for="inome"></label>    
                 <input type="email" name="email" id="iemail" placeholder="email" required>
-
+                <input class="enviar" type="submit" value="Enviar>">
             </form>
-            <div>
-                <button class="enviar" type="submit"> Enviar ></button>
-            </div>
+            
+                
+            
         </aside>
         <article>
             <img src="imagens/77d0a7c454e658833800528e748edbe9.png" alt="Womem-working">
         </article>
     </main>
 
-    <script>
-        function mudouTamanho(){
-            if (window.innerWidth >= 768){
-                itens.style.display = 'block'
-            } else {
-                itens.style.displar = 'none'
-            }
-        }
-        function clickMenu() {
-            if (itens.style.displar == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-
-        }
-
+    <script src="menu.js">
     </script>
     
     

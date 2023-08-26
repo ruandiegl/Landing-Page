@@ -16,6 +16,18 @@ header > nav {
     justify-content: space-between;
 }
 
+menu {
+    display: inline-block;
+}
+#burguer {
+    display: none ;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+}
+nav > div.mobile-menu{
+    display: none;
+}
 li {
     display: inline-block;
     color: white;
@@ -54,6 +66,10 @@ nav > div.logo {
     font-family: 'poppinsmedium';
     font-size: 2em;
 }
+
+.mobile-menu {
+    display: none;
+}
 main {
     display: flex;
     flex-direction: row;
@@ -63,6 +79,7 @@ h2 {
     font-size: 56px;
     line-height: 10px;
     font-family: 'poppinsmedium';
+    width: 100%;
 }
 p {
     width: 70%;
@@ -85,7 +102,7 @@ form > input {
 }
 
 
-button.enviar {
+input.enviar {
     height: 40px;
     width: 25%;
     border: none;
@@ -95,7 +112,7 @@ button.enviar {
     cursor: pointer;
 }
 
-button.enviar:hover {
+input.enviar:hover {
     background-color: rgb(96, 11, 146);
     transition: .5s;
 }

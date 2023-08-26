@@ -14,7 +14,91 @@ TV: acima de 1200px
 @media  screen and (max-width: 768px) {
 
     body {
-        background-color: blue;
+        
     }
-    
+    menu {
+        display: none;
+    }
+    #burguer {
+        display: block;
+        
+    } 
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    h2 {
+        line-height: 20px;
+        font-size: 2.2em;
+    }
+    input.enviar{
+        width: 80%;
+    }
+    img {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .mobile-menu {
+        
+        width: 100%;
+        
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+    .open {
+        display: block;
+        transition: 1s;
+    }  
 }
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        
+    }
+    menu {
+        display: none;
+    }
+    #burguer {
+        display: block;
+        
+    } 
+    main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    h2 {
+        line-height: 50px;
+        margin:0 auto;
+        
+    }
+   
+    
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    } 
+    .mobile-menu {
+        
+        width: 100%;
+        
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+    .open {
+        display: block;
+        transition: 1s;
+    }  
+
