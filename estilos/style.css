@@ -5,9 +5,10 @@
 body {
     background-color: rgb(49, 49, 49);
     color: white;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 15px;
+    font-family: 'poppinsregular';
 }
 header > nav {
     display: flex;
@@ -22,14 +23,36 @@ li {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-nav > .logo {
-    flex-direction: column;
-    line-height: 17px;
+li:hover {
+    color: rgb(96, 11, 146);
+    transition: .5s;
+    
 }
-#logo > h1 {
+button {
+    background-color: transparent;
+    border-radius: 26px;
+    border: 2px solid rgb(132, 13, 201);
+    padding: 15px;
+    color: white;
+    font-family: 'poppinsmedium';
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(96, 11, 146);
+    transition: .5s;
+    border: 2px solid rgb(96, 11, 146);
+}
+
+
+nav > div.logo {
+    flex-direction: column;
+
+}
+.logo > h1 {
     font-weight: 200;
+    line-height: 10px;
+    font-family: 'poppinsmedium';
+    font-size: 2em;
 }
 main {
     display: flex;
@@ -58,6 +81,7 @@ form > input {
     border: 1px solid blueviolet;
     border-radius: 20px;
     margin-bottom: 10px;
+    text-indent: 10px;
 }
 
 
@@ -68,5 +92,11 @@ button.enviar {
     border-radius: 40px;
     color: white;
     background-color: rgb(132, 13, 201) ;
+    cursor: pointer;
+}
+
+button.enviar:hover {
+    background-color: rgb(96, 11, 146);
+    transition: .5s;
 }
 

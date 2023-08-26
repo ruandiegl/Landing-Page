@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/fonts.css">
+    <link rel="stylesheet" href="estilos/query.css">
     <title>Lading page</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <nav>
+        <nav >
             <div class="logo">
                 <h1>Marketing</h1>
                 <h1>Criativo</h1>
             </div>
+            <menu class="itens">
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
             <ul>
                 <a href="#"><li>Inicio</li></a>
                 <a href="#"><li>Serviços</li></a>
                 <a href="#"><li>Sobre</li></a>
                 <a href="#"><li>Contato</li></a>
-                <button>Crie sua conta!</button>
+                <button>Ja tem uma conta?</button>
             </ul>
-            
+            </menu>
         </nav>
     </header>
     <main>
@@ -45,6 +49,25 @@
             <img src="imagens/77d0a7c454e658833800528e748edbe9.png" alt="Womem-working">
         </article>
     </main>
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.displar = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.displar == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+
+        }
+
+    </script>
     
     
 </body>

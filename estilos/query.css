@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* typical Break points
+pequenas telas: até 600px
+celular: 600px ate 768px
+tablet: 768px ate 992px
+PC: 992px ate 1200px
+TV: acima de 1200px
+
+*/
+
+@media  screen and (max-width: 768px) {
+
+    body {
+        background-color: blue;
+    }
+    
+}
